@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sreeleela Fan Page</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+/* Navigation */
+
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    background:rgba(0,0,0,.8);
+    backdrop-filter:blur(8px);
+}
+
+.logo{
+    color:#0066FF;
+    font-size:30px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#0066FF;
+}
+
+/* Hero */
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.7)),
+    url("hero.jpg") center/cover;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:65px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    font-size:20px;
+    margin-bottom:35px;
+}
+
+.button{
+
+    display:inline-block;
+    text-decoration:none;
+    color:white;
+    background:#0066FF;
+    padding:15px 35px;
+    border-radius:50px;
+    transition:.3s;
+
+}
+
+.button:hover{
+    background:#0066FF;
+}
+
+/* Sections */
+
+section{
+    padding:90px 8%;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#0066FF;
+    font-size:40px;
+}
+
+.about p{
+    text-align:center;
+    max-width:850px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* Cards */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#222;
+    padding:30px;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px #0062f6;
+}
+
+.card h3{
+    color:#0066FF;
+    margin-bottom:15px;
+}
+
+.card img{
+
+width:100%;
+height:320px;
+object-fit:cover;
+border-radius:15px;
+transition:.3s;
+
+}
+
+/* Gallery */
+
+.gallery{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+
+}
+
+.gallery img{
+
+width:100%;
+height:320px;
+object-fit:cover;
+border-radius:15px;
+transition:.3s;
+
+}
+
+.gallery img:hover{
+
+transform:scale(1.05);
+box-shadow:0 0 20px #0062f6;
+
+}
+
+/* Footer */
+
+footer{
+
+background:black;
+text-align:center;
+padding:40px;
+
+}
+
+footer h3{
+
+color:#0066FF;
+
+}
+
+footer p{
+
+margin-top:15px;
+color:#ccc;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+nav{
+
+flex-direction:column;
+
+}
+
+nav ul{
+
+margin-top:15px;
+flex-wrap:wrap;
+justify-content:center;
+
+}
+
+nav ul li{
+
+margin:10px;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.hero p{
+
+font-size:17px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">Sreeleela Fan</div>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#movies">Movies</a></li>
+<li><a href="#gallery">Gallery</a></li>
+
+</ul>
+
+</nav>
+
+<section class="hero" id="home">
+
+<div>
+
+<h1>Celebrating Sreeleela</h1>
+
+<p>
+Celebrating the remarkable acting performances and on-screen presence of actress Sreeleela through this fanmade website.
+</p>
+
+<a href="#about" class="button">Explore</a>
+
+</div>
+
+</section>
+
+<section id="about" class="about">
+
+<h2>About</h2>
+
+<p>
+
+Welcome! This fan page celebrates Sreeleela's work in Indian cinema.
+Here you'll find information about movies, favorite performances,
+and a gallery dedicated to her successful career.
+
+</p>
+
+</section>
+
+<section id="movies">
+
+<h2>Favorite Movies</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Kiss(2019)</h3>
+
+<p>
+Kiss has a perfect mix of romance, fun, and emotions for a romance comedy entertainer. Sreeleela's acting is delightful to watch, and her cute expressions and natural performance make the movie more enjoyable.
+</p>
+
+<img src="movieimg1.jpg" alt="MovieImg">
+
+</div>
+
+<div class="card">
+
+<h3>Bhagavanth Kesari(2023)</h3>
+
+<p>
+Bhagavanth Kesari has a good mix of emotions, fun, and an engaging story. Sreeleela's performance adds more heart to the movie, and the climax fight makes it a memorable experience.
+</p>
+
+<img src="movieimg2.JPG" alt="MovieImg">
+
+</div>
+
+<div class="card">
+
+<h3>By Two Love(2022)</h3>
+
+<p>
+By Two Love  has everything I enjoy in a romance drama, with emotions, relationships, and a realistic story. Sreeleela's cute and natural acting as a mother makes the movie more special, and her down-to-earth performance feels genuine and heartfelt.
+</p>
+
+<img src="movieimg3.jpg" alt="MovieImg">
+
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2>Gallery</h2>
+
+<div class="gallery">
+
+<img src="image1.jpg" alt="Gallery Image">
+<img src="image2.PNG" alt="Gallery Image">
+<img src="image3.jpg" alt="Gallery Image">
+<img src="image4.jpg" alt="Gallery Image">
+<img src="image5.jpg" alt="Gallery Image">
+<img src="image6.jpg" alt="Gallery Image">
+<img src="image7.jpg" alt="Gallery Image">
+<img src="image8.jpg" alt="Gallery Image">
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Sreeleela Fan Page</h3>
+
+</footer>
+
+</body>
+</html>
